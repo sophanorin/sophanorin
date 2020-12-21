@@ -280,7 +280,7 @@ nav ul {
 
 .projects {
   width: 90%;
-  margin: auto;
+  margin: 5rem auto;
   min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,11 +301,43 @@ nav ul {
 }
 
 .projects h2 {
-  margin: 5rem;
+  margin: 2rem;
+}
+
+.projects h5 {
+  margin-bottom: 5rem;
+}
+
+.projects h5 > a:hover {
+  color: #4696ff;
+}
+
+.projects img {
+  max-width: 604px;
+  height: 486px;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.projects img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 5px 5px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .travelly,
-.elena {
+.elena,
+.coolors,
+.ecommerc {
+  max-width: 604px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
@@ -417,6 +449,10 @@ footer h4 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
+}
+
+.about {
+  height: 90vh;
 }
 
 @media screen and (max-width: 1332px) {

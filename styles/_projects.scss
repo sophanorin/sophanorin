@@ -1,16 +1,37 @@
 .projects {
-  width: 90%;
-  margin: auto;
-  min-height: 90vh;
-  @include flex(space-between, center, row);
-  text-align: center;
-  flex-wrap: wrap;
-  h2 {
-    margin: 5rem;
-  }
+    width: 90%;
+    margin: 5rem auto;
+    min-height: 90vh;
+    @include flex(space-between, center, row);
+    text-align: center;
+    flex-wrap: wrap;
+    h2 {
+        margin: 2rem;
+    }
+    h5 {
+        margin-bottom: 5rem;
+    }
+    h5>a:hover {
+        color: #4696ff;
+    }
+    img {
+        max-width: 604px;
+        height: 486px;
+        border-radius: 2rem;
+        box-shadow: 0px 00px 10px rgba(0, 0, 0, 0.5);
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    img:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 5px 5px 20px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .travelly,
-.elena {
-  flex: 1 1 40rem;
+.elena,
+.coolors,
+.ecommerc {
+    max-width: 604px;
+    flex: 1 1 40rem;
 }
